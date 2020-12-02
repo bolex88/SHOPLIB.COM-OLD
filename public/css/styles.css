@@ -1,0 +1,97 @@
+body{
+    overflow-x: hidden;
+}
+
+.carousel-inner{
+    height: 500px;
+}
+.carousel-inner > .carousel-item > img{
+   max-height: 500px; /*carousel-images have the same image*/
+}
+.modal-image{
+    max-width: 100%;
+    /* -moz-max-width: 100%; */
+    max-height: 20%;
+    /* -moz-max-height: 20%; */
+}
+.description-text{
+    font-size: 0.9em;
+}
+
+td > p {
+    font-weight: 600;
+}
+
+/* make a footer sticky */
+.footer {
+    position: absolute;
+    bottom: 0;
+    /* height: 60px; */
+    width: 100%;
+    padding-top:20px;
+    z-index:1000;
+  }
+  .signup-footer{
+      position: relative;
+  }
+
+#login-section form{
+   padding: 5% 0 !important;
+}
+
+/* firefox only css */
+@-moz-document url-prefix() { 
+    .modal-image{
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .signup-footer{
+       margin-top: 2%;
+    }
+  }
+
+ /* Style the search box inside the navigation bar */
+ .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 300px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
